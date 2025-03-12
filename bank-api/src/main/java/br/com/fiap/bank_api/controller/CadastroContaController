@@ -1,0 +1,23 @@
+//Adicionar, deleta, verificar se existe por ID e ver todos
+
+package br.com.fiap.bank_api.controller;
+
+import br.com.fiap.bank_api.model.CadastroConta;
+import org.springframework.web.bind.annotation.GetMapping;
+import java.util.List;
+
+
+@RestController
+@ResquestMapping("/conta")
+
+public class CadastroContaController{
+
+    private Logger log = LoggerFactory.getLogger(getClass());
+    private List<CadastroConta> contas = new ArrayList<>(); 
+
+@GetMapping 
+public List <CadastroConta> index() {
+    return contas
+}
+  }
+

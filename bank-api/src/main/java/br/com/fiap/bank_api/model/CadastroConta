@@ -1,0 +1,89 @@
+//Classes tudo
+package br.com.fiap.bank_api.model;
+
+public class CadastroConta {
+
+    private int id;
+    private int numeroAgencia;
+    private String nomeTitular;
+    private Long cpf;
+    private Date dataAbertura;
+    private double saldoInic;
+    private boolean ativa;
+    private String tipo
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getNumeroAgencia() {
+        return numeroAgencia;
+    }
+
+    public void setNumeroAgencia(int numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+    }
+
+    public String getNomeTitular() {
+        return nomeTitular;
+    }
+
+    public void setNomeTitular(String nomeTitular) {
+        this.nomeTitular = nomeTitular;
+    }
+
+    public Long getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(Long cpf) {
+        this.cpf = cpf;
+    }
+
+    public Date getDataAbertura() {
+        return dataAbertura;
+    }
+
+    public void setDataAbertura(Date dataAbertura) {
+        this.dataAbertura = dataAbertura;
+    }
+
+    public double getSaldoInic() {
+        return saldoInic;
+    }
+
+    public void setSaldoInic(double saldoInic) {
+        this.saldoInic = saldoInic;
+    }
+
+    public boolean isAtiva() {
+        return ativa;
+    }
+
+    public void setAtiva(boolean ativa) {
+        this.ativa = ativa;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public CadastroConta(int id, int numeroAgencia, String nomeTitular, Long cpf, Date dataAbertura, double saldoInic, boolean ativa, String tipo) {
+        this.id = id;
+        this.numeroAgencia = numeroAgencia;
+        this.nomeTitular = nomeTitular;
+        this.cpf = cpf;
+        this.dataAbertura = dataAbertura;
+        this.saldoInic = saldoInic;
+        this.ativa = ativa;
+        this.tipo = tipo;
+    }
+}
